@@ -1,6 +1,6 @@
 {
   "name": "slack-expire-files",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Expire (delete) files in slack, with ratelimits",
   "main": "index.js",
   "scripts": {
