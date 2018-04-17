@@ -26,13 +26,15 @@ function run(token, options) {
     },
     json: true,
   })
-    .then(response => filterFiles(response.body.files, options))
+    .then(res => filterFiles(res, options))
     .then(files => deleteFiles(token, files))
     .catch(console.error)
 }
 
-function filterFiles(files, options) {
+function filterFiles(res, options) {
+  const files = res.body.files
   if (!files) {
+    console.error(res.body)
     throw 'Unexpected response from API. Try generating another token!'
   }
 
