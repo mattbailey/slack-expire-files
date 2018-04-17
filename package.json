@@ -1,0 +1,30 @@
+{
+  "name": "slack-expire-files",
+  "version": "1.0.0",
+  "description": "Expire (delete) files in slack, with ratelimits",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattbailey/slack-expire-files.git"
+  },
+  "author": "Matt Bailey <m@mdb.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattbailey/slack-expire-files/issues"
+  },
+  "bin": {
+    "slack-expire-files": "index.js"
+  },
+  "homepage": "https://github.com/mattbailey/slack-expire-files#readme",
+  "engines": { "node": ">=8" },
+  "dependencies": {
+    "bottleneck": "^2.3.0",
+    "got": "^8.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0"
+  }
+}
