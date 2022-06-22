@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "bottleneck": "^2.8.0",
-    "got": "^6.7.1"
+    "got": "^11.8.5"
   },
   "devDependencies": {
     "ava": "^0.25.0"
